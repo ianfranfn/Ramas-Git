@@ -44,7 +44,7 @@ git switch -c <nombre-rama> # Crea una rama y nos mueve a la rama que se creó
 ## Me mueve entre ramas
 
 ```sh
-git swtich <nombre-rama>
+git switch <nombre-rama>
 git switch feature/ramas # ejemplo
 ```
 
@@ -64,4 +64,19 @@ git switch main
 git merge feature/ramas # me traigo a main lo que tenía en feature/ramas
 ```
 
-*fusión -> fast-forward -> git hace la fusión automáticamente.
+* fusión -> fast-forward -> git hace la fusión automáticamente.
+
+## Eliminar una rama 
+
+```sh
+git branch -d <nombre-rama> # Si la rama que estoy borrando ya fue fusionada se va a borrar la rama.
+git branch -D <nombre-rama> # Confirmación de borrado de una rama que todavía no ha sido fusionada en el repositorio.
+git branch -d feature/ramas # Ya estaba fusionada feature/ramas
+git branch -D alejo # No estaba fusionada por lo cual me pidió confirmación.
+```
+
+## Abortar la fusión
+
+```sh
+git merge --abort
+```
