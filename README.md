@@ -47,3 +47,21 @@ git switch -c <nombre-rama> # Crea una rama y nos mueve a la rama que se creó
 git swtich <nombre-rama>
 git switch feature/ramas # ejemplo
 ```
+
+## Ver las ramas locales y remotas
+
+```sh
+git branch -a # Me muestra las ramas locales y remotas
+```
+
+## Fusionando ramas
+Estoy sobre la rama main y me quiero traer lo que está en feature/ramas
+
+```sh
+git merge <rama-que-quiero-fusionar>
+# ejemplo
+git switch main 
+git merge feature/ramas # me traigo a main lo que tenía en feature/ramas
+```
+
+*fusión -> fast-forward -> git hace la fusión automáticamente.
