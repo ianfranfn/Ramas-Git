@@ -40,3 +40,10 @@ git branch <nombre-rama> # crea una rama y nos deja en la rama original
 git branch feature/ramas # ejemplo
 git switch -c <nombre-rama> # Crea una rama y nos mueve a la rama que se creó
 ```
+
+## Me mueve entre ramas
+
+```sh
+git swtich <nombre-rama>
+git switch feature/ramas # ejemplo
+```
